@@ -2,8 +2,8 @@ import express from "express";
 import databaseConnection from "./config/db.js";
 import apiRouter from "./routes/shopdataRoutes.js";
 import bodyParser from "body-parser";
-
-
+import dotenv from "dotenv";
+ dotenv.config()
 databaseConnection();
 const app = express();
 const PORT = 8080;
